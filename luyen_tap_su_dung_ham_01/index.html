@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <script>
+    // Bài 1:Tạo hàm alertMessage() hiển thị hộp thoại chứa chuỗi "Xin chào". Gọi hàm từ trong phần <body> của trang web.
+    // function alertMessage() {
+    //   document.write("Xin chào")
+    // }
+    // alertMessage()
+
+    // Bài 2:Tạo hàm nhận vào một đối số dạng số, tăng giá trị của đối số lên 1 và trả về giá trị sau khi tăng.
+    //         Gọi hàm từ trong phần <body> của trang web và hiển thị kết quả lên màn hình.
+    // function upNumber(x) {
+    //   x++;
+    //   document.write(x)
+    // }
+    // upNumber(3)
+
+    //Bài 3:Tạo hàm nhận vào hai tham số:
+    //         Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng.
+    //         Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.
+    // function numbers(a, b) {
+    //   if (a > b) {
+    //     alert("a > b");
+    //   } else {
+    //       let sum = +(a + b);
+    //     alert("Tổng 2 số là: " + sum);
+    //   }
+    // }
+    // numbers(11, 10);
+
+    // Bài 4:Thêm các hàm alert() vào những vị trí thích hợp trong đoạn mã sau để hiển thị giá trị của biến
+    // result trước và sau lời gọi hàm.
+    // function addNumbers() {
+    //     firstNum = 4;
+    //     secondNum = 8;
+    //     result = firstNum + secondNum;
+    //     return result;
+    // }
+    // result = 0;
+    // alert(result);
+    // result = addNumbers();
+    // alert(result);
+
+    // bai 5:
+    debugger
+    let ngoi_sao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let chom_sao = ["Ursa Minor", "Taurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function starSeach(star_name){
+        for(let i = 0; i < ngoi_sao.length; i++){
+            if(ngoi_sao[i] === star_name){
+                return i;
+            }
+        }
+        return -1;
+    }
+    let a = prompt("Nhập vào tên ngôi sao: ");
+    let result = starSeach(a);
+    if (result != -1) {
+        alert("Chòm sao phù hợp với ngôi sao vừa nhập là: " + chom_sao[result]);
+    } else{
+        alert("Chòm sao không phù hợp!!!")
+    }
+
+  </script>
+
+</body>
+</html>
