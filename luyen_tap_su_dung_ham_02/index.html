@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // bai 1 Tính bình phương:
+        // function binhPhuong(x){
+        //     return Math.pow(x,2);
+        // }
+        // let a = prompt("Nhập vào 1 số: ");
+        // result = binhPhuong(a);
+        // document.write("Bình phương của số " + a + " là " + result);
+
+        // bai 2: Tính diện tích và chu vi hình tròn:
+        // function area(r) {
+        //     return Math.PI * r * r;
+        // }
+        // function periMeter(r) {
+        //     return Math.PI * 2 * r;
+        // }
+        // let a = prompt("Nhập vào bán kính: ")
+        // result_area = area(a);
+        // document.write("Diện tích hình tròn là: " + result_area.toFixed(2) + "<br>");
+        // result_perimeter = periMeter(a);
+        // document.write("Chu vi hình tròn là: " + result_perimeter.toFixed(2));
+
+        // bai 3 Tính giai thừa:
+        // function giaiThua(n){
+        //     let gt = 1;
+        //     for(let i=1; i <= n; i++){
+        //         gt*= i;
+        //     }
+        //     return gt;
+        // }
+        // let number = prompt("Nhập vào số nguyên: ");
+        // let result = giaiThua(number);
+        // document.write(number + "! = " + result );
+
+        // bai 4 Kiểm tra ký tự số:
+        // function checkNumber(input){
+        //     if(isNaN(input) === true){
+        //         return false;
+        //     }
+        //     return true;
+        // }
+        // let a = prompt("Nhập vào 1 kí tự: ");
+        // let result = checkNumber(a);
+        // document.write(result);
+
+        // bai 5. Tìm số nguyên nhỏ nhất:
+        // function maxNumber(a, b, c) {
+        //     if (a > b || a > c) {
+        //         return a;
+        //     } else if (a > b || a < c) {
+        //         return c;
+        //     } else {
+        //         return b;
+        //     }
+        // }
+        // let a = +prompt("Nhập vào số a: ");
+        // let b = +prompt("Nhập vào số c: ");
+        // let c = +prompt("Nhập vào số c: ");
+        // let max = maxNumber(a, b, c);
+        // document.write("Số lớn nhất trong 3 số vừa nhập là: ")
+
+        // bai 6: Kiểm tra số nguyên dương:
+        // function checkNguyenDuong(a){
+        //     if (a > 0) {
+        //         return true;
+        //     } else {
+        //         return false;
+        //     }
+        // }
+        // let a = +prompt("Nhập vào 1 số nguyên: ");
+        // let result = checkNguyenDuong(a);
+        // document.write(result);
+
+        // bài 7 Đổi chỗ hai số nguyên:
+        // function swapumber(a, b) {
+        //     let temp = a;
+        //     a = b;
+        //     b = temp;
+        //     return [a, b] ;
+        // }
+        //
+        // let a = +prompt("Nhập số đầu tiên: ");
+        // let b = +prompt("Nhập vào số thứ hai: ");
+        // let result = swapumber(a, b);
+        // document.write(result);
+
+        // bai 8. Viết hàm nhận vào một mảng số nguyên bất kỳ và đảo ngược mảng đó.
+
+        // function arrayReverse(arr) {
+        //     return arr.reverse();
+        // }
+        // let input = prompt("Nhập vào 1 dãy số cách nhau bơi dấu phẩy: ");
+        // let array = input.split(",").map(Number);
+        // let result = arrayReverse(array);
+        // document.write("Dãy đảo ngược là: " + result.join(", "));
+
+        // bai 9. Kiểm tra ký tự trong mảng:
+        function checkArray(arr, a) {
+            let count = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if(arr[i] === a) {
+                    count++;
+                }
+            }
+            return count > 0 ? count : -1;
+        }
+
+        let input = prompt("Nhập vào dãy kí tự: ");
+        let a = prompt("Nhập vào kí tự: ");
+        let result = checkArray(input,a);
+        document.write(result);
+
+
+    </script>
+</body>
+</html>
